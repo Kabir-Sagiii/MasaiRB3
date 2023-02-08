@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      var divRef = React.createElement(
+        "div",
+        {
+          id: "b1",
+          style: {
+            color: "red",
+          },
+        },
+        [
+          React.createElement("h2", null, "React Concept"),
+          React.createElement("p", null, "dkvbdjkfvbdjkfvbvjkdvdfb"),
+        ]
+      );
+      // <div id="d1" style:"color:red"> <h2 >React Concept </h2>  <p> --- </div>
+
+      ReactDOM.render(divRef, document.getElementById("root"));
+    </script>
+  </body>
+</html>

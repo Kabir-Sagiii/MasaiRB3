@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="jsxroot"></div>
+
+    <script type="text/babel">
+      //div
+
+      //   var divRef = <div> React Element using JSX </div>; // JSX Element
+
+      var h2Content = "React Content by Kabir";
+      var pContent = "React  is JS Library";
+
+      var container = (
+        <div id="d1">
+          <h2> {h2Content} </h2>
+          <p>{pContent}</p>
+          <button>JSX </button>
+        </div>
+      );
+
+      //   ReactDOM.render(divRef, document.getElementById("jsxroot"));
+
+      ReactDOM.render(container, document.getElementById("jsxroot"));
+      //ReactDOM 17 // ReactDOM 18
+    </script>
+  </body>
+</html>

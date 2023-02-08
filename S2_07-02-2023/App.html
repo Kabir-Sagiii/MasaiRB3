@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createUI() {
+        // var container = (
+        //   <div>
+        //     <h2>React Concept</h2>
+        //     <p> React is Tricky to Understand at Initial stage </p>
+        //   </div>
+        // );
+        // return container;
+
+        return (
+          <div>
+            <h2>React Concept</h2>
+            <p> React is Tricky to Understand at Initial stage </p>
+          </div>
+        );
+      }
+
+      function App() {
+        var mainContainer = (
+          <div>
+            <div> {createUI()} </div>
+            <div> {createUI()} </div>
+          </div>
+        );
+
+        ReactDOM.render(mainContainer, document.getElementById("root"));
+      }
+      App();
+    </script>
+  </body>
+</html>

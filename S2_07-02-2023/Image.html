@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function ImageUI({ image, name }) {
+        return (
+          <div>
+            <img src={image} width="300" height="300" />
+            <h3>{name} </h3>
+          </div>
+        );
+      }
+
+      function Main() {
+        var container = (
+          <div>
+            <ImageUI
+              image="https://www.carvermostardi.com/cmos/wp-content/uploads/2018/05/corporate_headshots_tampa_002.jpg"
+              name="Kabir"
+            />
+            <ImageUI
+              image="https://th.bing.com/th/id/R.5176db1c057814399fb6cb44ddbeb36b?rik=%2bhqENQ8K2Eq2Jw&riu=http%3a%2f%2fwww.sgrlaw.com%2fwp-content%2fuploads%2f2017%2f09%2fHeadshot_Chapman-Samuel-2017-319x480.jpg&ehk=FcYNHlmA4PGth1ucSToh2BZ35H4A9Yy8fwy8W7T1zYA%3d&risl=&pid=ImgRaw&r=0"
+              name="Sagar"
+            />
+          </div>
+
+          //   <div>
+          //     {ImageUI(
+          //       "https://www.carvermostardi.com/cmos/wp-content/uploads/2018/05/corporate_headshots_tampa_002.jpg",
+          //       "Chris"
+          //     )}
+          //     {ImageUI(
+          //       "https://th.bing.com/th/id/R.5176db1c057814399fb6cb44ddbeb36b?rik=%2bhqENQ8K2Eq2Jw&riu=http%3a%2f%2fwww.sgrlaw.com%2fwp-content%2fuploads%2f2017%2f09%2fHeadshot_Chapman-Samuel-2017-319x480.jpg&ehk=FcYNHlmA4PGth1ucSToh2BZ35H4A9Yy8fwy8W7T1zYA%3d&risl=&pid=ImgRaw&r=0",
+          //       "John"
+          //     )}
+          //   </div>
+        );
+
+        ReactDOM.render(container, document.getElementById("root"));
+      }
+      Main();
+    </script>
+  </body>
+</html>
