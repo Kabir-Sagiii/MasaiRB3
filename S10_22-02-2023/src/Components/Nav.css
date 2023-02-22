@@ -1,0 +1,18 @@
+.Nav {
+    color: white;
+    background-color: black;
+    /* height: 10vh; */
+    padding: 15px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.Nav h2 {
+    margin: 0;
+}
+a {
+    color:white;
+    text-decoration: none;
+    margin-right: 50px;
+}
