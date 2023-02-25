@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import "./Nav.css";
 function Nav() {
   return (
@@ -8,10 +9,18 @@ function Nav() {
       </div>
 
       <div>
-        <Link to="/">Home</Link>
-        <Link to="/users">Users</Link>
-        <Link to="/products">Products</Link>
-        <Link to="/help">Help</Link>
+        <Link to="/" style={{ color: "white" }}>
+          Home
+        </Link>
+        <Link style={{ color: "white" }} to="/users">
+          Users
+        </Link>
+        <Link style={{ color: "white" }} to="/products">
+          Products
+        </Link>
+        <Link style={{ color: "white" }} to="/help">
+          Help
+        </Link>
       </div>
     </div>
   );
