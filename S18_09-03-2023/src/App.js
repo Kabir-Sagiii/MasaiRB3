@@ -2,15 +2,17 @@ import "./App.css";
 import MyBox from "./Components/Box";
 import StackComp from "./Components/Stack";
 import FlexComp from "./Components/FlexComp";
+import Alert from "./Components/Alert";
 
 
 
 function App() {
   return (
     <div className="App">
-     {/* <MyBox />
-     <StackComp/> */}
-     <FlexComp />
+      {/* <Alert /> */}
+     <MyBox />
+     <StackComp/>
+     {/* <FlexComp /> */}
     </div>
   );
 }
